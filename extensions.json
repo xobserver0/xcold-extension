@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "license": "MPL-2.0",
+  "updateUrl": "https://xcold-extension.pages.dev/secret/extensions.json",
+  "minAppVersion": "1.0.0",
+  "extensions": [
+    {
+      "id": "src_a",
+      "name": "Server 1",
+      "version": "1.0.0",
+      "author": "xobserver0",
+      "type": "config",
+      "enabled": true,
+      "downloadUrl": "https://raw.githubusercontent.com/xobserver0/xcold-extension/main/extensions/server1.extension",
+      "icon": "https://raw.githubusercontent.com/xobserver0/xcold-extension/main/icons/server1.png",
+      "hash": "sha256:placeholder"
+    }
+  ],
+  "changelog": {
+    "1.0.0": "Initial release with Server 1"
+  },
+  "lastUpdated": "2026-08-20"
+}
