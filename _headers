@@ -1,0 +1,9 @@
+# Bait panel
+/bait/*
+  Cache-Control: public, max-age=3600
+  X-Fake-Data: true
+
+# Secret endpoint
+/secret/*
+  Cache-Control: private, max-age=0
+  X-Content-Type-Options: nosniff
