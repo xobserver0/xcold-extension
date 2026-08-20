@@ -1,0 +1,46 @@
+{
+  "id": "src_a",
+  "name": "Server 1",
+  "version": "1.0.0",
+  "author": "xobserver0",
+  "license": "MPL-2.0",
+  "type": "config",
+  "enabled": true,
+  "source": {
+    "baseUrl": "aHR0cHM6Ly9hbml0YWt1LnBlLw==",
+    "searchPath": "/search.html?keyword={query}",
+    "searchSelector": "div.last_episodes ul.items li",
+    "searchTitleSelector": "p.name a",
+    "searchImageSelector": "img",
+    "searchIdSelector": "p.name a[href]",
+    "searchIdRegex": "category/([^/]+)"
+  },
+  "episodes": {
+    "path": "/category/{animeId}",
+    "listSelector": "ul#episode_page li a",
+    "idSelector": "a[href]",
+    "idRegex": "/([^/]+)$",
+    "titleSelector": "text()",
+    "numberRegex": "Episode (\\d+)"
+  },
+  "video": {
+    "path": "/{episodeId}",
+    "playerSelector": "iframe[src*='gogo']",
+    "videoSelectors": [
+      "video source[src]",
+      "video[src]",
+      "iframe[src*='.m3u8']"
+    ],
+    "serverSelectors": {
+      "default": "iframe[src*='gogo']",
+      "backup": "iframe[src*='mp4upload']"
+    }
+  },
+  "metadata": {
+    "titleSelector": "h1.title",
+    "imageSelector": "img[alt*='poster']",
+    "descriptionSelector": "div.description p",
+    "statusSelector": "p:contains(Status)",
+    "genreSelector": "p:contains(Genre)"
+  }
+}
